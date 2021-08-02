@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "history_buys",
+  "info": {
+    "name": "HistoryBuys"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "awards": {
+      "via": "history_buys",
+      "collection": "awards",
+      "dominant": true
+    },
+    "price_all": {
+      "type": "integer"
+    },
+    "point_receive": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "string"
+    },
+    "data_users": {
+      "via": "history_buys",
+      "collection": "data-user"
+    }
+  }
+}

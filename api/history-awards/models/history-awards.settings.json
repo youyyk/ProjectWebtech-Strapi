@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "history_awards",
+  "info": {
+    "name": "HistoryAwards"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "award": {
+      "via": "history_awards",
+      "model": "awards"
+    },
+    "date": {
+      "type": "string"
+    },
+    "data_users": {
+      "via": "history_awards",
+      "collection": "data-user"
+    }
+  }
+}

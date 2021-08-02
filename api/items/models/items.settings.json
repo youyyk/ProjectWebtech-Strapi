@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "name": "Items",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "explain": {
+      "type": "text"
+    },
+    "status": {
+      "type": "boolean",
+      "default": false
+    },
+    "data_users": {
+      "via": "basket",
+      "collection": "data-user"
+    }
+  }
+}
