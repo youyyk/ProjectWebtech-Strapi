@@ -23,10 +23,6 @@
     "stock": {
       "type": "integer"
     },
-    "history_buys": {
-      "via": "awards",
-      "collection": "history-buys"
-    },
     "history_awards": {
       "via": "award",
       "collection": "history-awards"

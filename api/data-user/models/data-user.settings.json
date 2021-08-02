@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "data_users",
   "info": {
-    "name": "DataUser"
+    "name": "DataUser",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -34,15 +35,14 @@
       "via": "data_users",
       "dominant": true
     },
-    "history_buys": {
-      "collection": "history-buys",
-      "via": "data_users",
-      "dominant": true
-    },
     "history_awards": {
       "collection": "history-awards",
       "via": "data_users",
       "dominant": true
+    },
+    "history_buys": {
+      "collection": "history-buys",
+      "via": "data_user"
     }
   }
 }

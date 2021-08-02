@@ -11,12 +11,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "awards": {
-      "via": "history_buys",
-      "collection": "awards",
-      "dominant": true
+    "item": {
+      "model": "items",
+      "via": "history_buys"
     },
-    "price_all": {
+    "amount": {
+      "type": "integer"
+    },
+    "price": {
       "type": "integer"
     },
     "point_receive": {
@@ -25,9 +27,9 @@
     "date": {
       "type": "string"
     },
-    "data_users": {
+    "data_user": {
       "via": "history_buys",
-      "collection": "data-user"
+      "model": "data-user"
     }
   }
 }

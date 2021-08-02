@@ -28,6 +28,10 @@
     "data_users": {
       "via": "basket",
       "collection": "data-user"
+    },
+    "history_buys": {
+      "via": "item",
+      "collection": "history-buys"
     }
   }
 }
