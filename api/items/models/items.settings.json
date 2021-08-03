@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "items",
   "info": {
-    "name": "Items",
-    "description": ""
+    "name": "Items"
   },
   "options": {
     "increments": true,
@@ -22,16 +21,16 @@
       "type": "text"
     },
     "status": {
-      "type": "boolean",
-      "default": false
+      "type": "boolean"
     },
-    "data_users": {
-      "via": "basket",
-      "collection": "data-user"
+    "users": {
+      "via": "baskets",
+      "plugin": "users-permissions",
+      "collection": "user"
     },
     "history_buys": {
-      "via": "item",
-      "collection": "history-buys"
+      "via": "items",
+      "collection": "history-buy"
     }
   }
 }

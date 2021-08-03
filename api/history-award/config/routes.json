@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/data-users",
-      "handler": "data-user.find",
+      "path": "/history-awards",
+      "handler": "history-award.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/data-users/count",
-      "handler": "data-user.count",
+      "path": "/history-awards/count",
+      "handler": "history-award.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/data-users/:id",
-      "handler": "data-user.findOne",
+      "path": "/history-awards/:id",
+      "handler": "history-award.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/data-users",
-      "handler": "data-user.create",
+      "path": "/history-awards",
+      "handler": "history-award.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/data-users/:id",
-      "handler": "data-user.update",
+      "path": "/history-awards/:id",
+      "handler": "history-award.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/data-users/:id",
-      "handler": "data-user.delete",
+      "path": "/history-awards/:id",
+      "handler": "history-award.delete",
       "config": {
         "policies": []
       }

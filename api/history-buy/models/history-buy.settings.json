@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "history_buys",
   "info": {
-    "name": "HistoryBuys"
+    "name": "HistoryBuy"
   },
   "options": {
     "increments": true,
@@ -11,14 +11,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "item": {
-      "model": "items",
-      "via": "history_buys"
+    "items": {
+      "collection": "items",
+      "via": "history_buys",
+      "dominant": true
     },
-    "amount": {
-      "type": "integer"
+    "Amount": {
+      "type": "string"
     },
-    "price": {
+    "price_all": {
       "type": "integer"
     },
     "point_receive": {
@@ -27,9 +28,10 @@
     "date": {
       "type": "string"
     },
-    "data_user": {
+    "user": {
       "via": "history_buys",
-      "model": "data-user"
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

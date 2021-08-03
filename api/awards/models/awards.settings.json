@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "awards",
   "info": {
-    "name": "Awards",
-    "description": ""
+    "name": "Awards"
   },
   "options": {
     "increments": true,
@@ -13,23 +12,20 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "point": {
-      "type": "integer",
-      "required": false
+      "type": "integer"
     },
     "stock": {
       "type": "integer"
     },
+    "status": {
+      "type": "boolean"
+    },
     "history_awards": {
       "via": "award",
-      "collection": "history-awards"
-    },
-    "status": {
-      "type": "boolean",
-      "default": false
+      "collection": "history-award"
     }
   }
 }
