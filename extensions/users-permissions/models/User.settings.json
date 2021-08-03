@@ -67,17 +67,6 @@
     "point_now": {
       "type": "integer"
     },
-    "point_used": {
-      "type": "integer"
-    },
-    "history_buys": {
-      "collection": "history-buy",
-      "via": "user"
-    },
-    "history_awards": {
-      "collection": "history-award",
-      "via": "user"
-    },
     "date": {
       "type": "string"
     },

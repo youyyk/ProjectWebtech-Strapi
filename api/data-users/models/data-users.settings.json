@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "data_users",
+  "info": {
+    "name": "DataUsers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "Total_Buy": {
+      "type": "integer"
+    },
+    "point_used": {
+      "type": "integer"
+    },
+    "history_buys": {
+      "collection": "history-buy",
+      "via": "data_user"
+    },
+    "history_awards": {
+      "collection": "history-award",
+      "via": "data_user"
+    }
+  }
+}

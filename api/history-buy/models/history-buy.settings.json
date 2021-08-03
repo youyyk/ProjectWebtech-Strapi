@@ -28,10 +28,9 @@
     "date": {
       "type": "string"
     },
-    "user": {
+    "data_user": {
       "via": "history_buys",
-      "plugin": "users-permissions",
-      "model": "user"
+      "model": "data-users"
     }
   }
 }

@@ -18,10 +18,9 @@
     "date": {
       "type": "string"
     },
-    "user": {
+    "data_user": {
       "via": "history_awards",
-      "plugin": "users-permissions",
-      "model": "user"
+      "model": "data-users"
     }
   }
 }
