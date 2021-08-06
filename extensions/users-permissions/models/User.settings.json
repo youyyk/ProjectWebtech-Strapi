@@ -59,20 +59,16 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "baskets": {
-      "collection": "items",
-      "via": "users",
-      "dominant": true
-    },
     "point_now": {
       "type": "integer"
     },
     "date": {
       "type": "string"
     },
-    "admin": {
-      "type": "boolean",
-      "default": false
+    "items": {
+      "collection": "items",
+      "via": "users",
+      "dominant": true
     }
   }
 }

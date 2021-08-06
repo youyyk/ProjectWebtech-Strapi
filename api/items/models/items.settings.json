@@ -23,14 +23,14 @@
     "status": {
       "type": "boolean"
     },
-    "users": {
-      "via": "baskets",
-      "plugin": "users-permissions",
-      "collection": "user"
-    },
     "history_buys": {
       "via": "items",
       "collection": "history-buy"
+    },
+    "users": {
+      "via": "items",
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }
