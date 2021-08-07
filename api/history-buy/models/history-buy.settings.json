@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "history_buys",
   "info": {
-    "name": "HistoryBuy"
+    "name": "HistoryBuy",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,10 +12,9 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "items": {
-      "collection": "items",
-      "via": "history_buys",
-      "dominant": true
+    "item": {
+      "model": "items",
+      "via": "history_buys"
     },
     "Amount": {
       "type": "string"

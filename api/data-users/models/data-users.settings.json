@@ -22,8 +22,8 @@
       "type": "integer"
     },
     "history_buys": {
-      "collection": "history-buy",
-      "via": "data_user"
+      "via": "data_user",
+      "collection": "history-buy"
     },
     "history_awards": {
       "collection": "history-award",
