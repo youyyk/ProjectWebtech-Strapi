@@ -24,11 +24,6 @@
     "status": {
       "type": "boolean"
     },
-    "users": {
-      "via": "items",
-      "plugin": "users-permissions",
-      "collection": "user"
-    },
     "picture": {
       "collection": "file",
       "via": "related",
@@ -41,9 +36,10 @@
       "required": false,
       "pluginOptions": {}
     },
-    "history_buys": {
-      "via": "item",
-      "collection": "history-buy"
+    "users": {
+      "via": "items",
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }

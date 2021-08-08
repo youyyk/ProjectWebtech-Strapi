@@ -22,10 +22,6 @@
     },
     "status": {
       "type": "boolean"
-    },
-    "history_awards": {
-      "via": "award",
-      "collection": "history-award"
     }
   }
 }

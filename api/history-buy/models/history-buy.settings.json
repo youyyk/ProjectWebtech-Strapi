@@ -12,11 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "item": {
-      "model": "items",
-      "via": "history_buys"
-    },
-    "Amount": {
+    "name_item": {
       "type": "string"
     },
     "price_all": {
@@ -28,9 +24,11 @@
     "date": {
       "type": "string"
     },
-    "data_user": {
-      "via": "history_buys",
-      "model": "data-users"
+    "amount": {
+      "type": "integer"
+    },
+    "name_user": {
+      "type": "string"
     }
   }
 }

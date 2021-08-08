@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "history_awards",
   "info": {
-    "name": "HistoryAward"
+    "name": "HistoryAward",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,16 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "award": {
-      "model": "awards",
-      "via": "history_awards"
-    },
     "date": {
       "type": "string"
     },
-    "data_user": {
-      "via": "history_awards",
-      "model": "data-users"
+    "name_user": {
+      "type": "string"
+    },
+    "name_award": {
+      "type": "string"
     }
   }
 }

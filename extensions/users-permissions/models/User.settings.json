@@ -66,8 +66,8 @@
       "type": "string"
     },
     "items": {
-      "via": "users",
       "collection": "items",
+      "via": "users",
       "dominant": true
     }
   }
