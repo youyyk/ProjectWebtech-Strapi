@@ -20,6 +20,9 @@
     },
     "name_award": {
       "type": "string"
+    },
+    "point": {
+      "type": "integer"
     }
   }
 }
